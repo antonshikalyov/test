@@ -17,19 +17,18 @@ public class Robot {
     int turnleft;
     int turnright;
 
-    public void setDirection() {
-        int UP ,RIGHT,DOWN,LEFT;
+    public Direction setDirection() {
         if (getY() > 0){
-            return setDirection() = UP;
+            return Direction.UP;
         }
         else if (getX() > 0){
-            return setDirection() = RIGHT;
+            return Direction.RIGHT;
         }
         else if (getY() < 0){
-            return setDirection() = DOWN;
+            return Direction.DOWN;
         }
-        else (getX() < 0){
-            return setDirection() = LEFT;
+        else {
+            return Direction.LEFT;
         }
     }
 
