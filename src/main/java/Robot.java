@@ -16,6 +16,7 @@ public class Robot {
 
     int turnleft;
     int turnright;
+    String name;
 
     public void setDirection() {
         int UP ,RIGHT,DOWN,LEFT;
