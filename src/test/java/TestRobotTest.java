@@ -14,6 +14,24 @@ public class TestRobotTest {
     }
 
     @Test
+    public void testTurnLeft() {
+        Robot robot1 = new Robot();
+        robot1.setTurnleft();
+
+        assertEquals(robot1.getTurnleft(),5);
+    }
+
+    @Test
+    public void testTurnRight() {
+        Robot robot1 = new Robot();
+        robot1.setTurnright();
+
+        assertEquals(robot1.getTurnright(),5);
+    }
+
+//===========================================================================
+
+    @Test
     public void testRobotX() {
         Robot robot1 = new Robot();
         robot1.setX(10);

@@ -14,6 +14,26 @@ public class Robot {
         return color;
     }
 
+    int turnleft;
+    int turnright;
+
+    public void setTurnleft() {
+        this.turnleft = turnleft;
+    }
+
+    public int getTurnleft() {
+        return turnleft;
+    }
+
+    public void setTurnright() {
+        this.turnright = turnright;
+    }
+
+    public int getTurnright() {
+        return turnright;
+    }
+//    ================================================
+
     public int getX() {
         return x;
     }
