@@ -17,7 +17,23 @@ public class Robot {
     int turnleft;
     int turnright;
 
-    public Direction setDirection() {
+    public Direction setUP() {
+        this.UP() = Direction.UP;
+    }
+
+    public Direction setRIGHT() {
+        this.RIGHT() = Direction.RIGHT;
+    }
+
+    public Direction setDOWN() {
+        this.DOWN() = Direction.DOWN;
+    }
+
+    public Direction setLEFT() {
+        this.LEFT() = Direction.LEFT;
+    }
+
+    public Direction getDirection() {
         if (getY() > 0){
             return Direction.UP;
         }
@@ -37,7 +53,6 @@ public class Robot {
     }
 
     public int getTurnleft() {
-
         return turnleft;
     }
 
@@ -48,7 +63,7 @@ public class Robot {
     public int getTurnright() {
         return turnright;
     }
-//    ================================================
+//=========================================================
 
     public int getX() {
         return x;

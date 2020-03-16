@@ -28,7 +28,38 @@ public class TestRobotTest {
 
         assertEquals(robot1.getTurnright(),5);
     }
+//=========================DIRECTION======================================
+    @Test
+    public void Direction() {
+        Robot robot1 = new Robot();
+        robot1.setUP();
 
+        assertEquals(robot1.getY(),5);
+    }
+
+    @Test
+    public void Direction() {
+        Robot robot1 = new Robot();
+        robot1.setRIGHT();
+
+        assertEquals(robot1.getX(),5);
+    }
+
+    @Test
+    public void Direction() {
+        Robot robot1 = new Robot();
+        robot1.setDOWN();
+
+        assertEquals(robot1.getY(),5);
+    }
+
+    @Test
+    public void Direction() {
+        Robot robot1 = new Robot();
+        robot1.setLEFT();
+
+        assertEquals(robot1.getX(),5);
+    }
 //===========================================================================
 
     @Test
