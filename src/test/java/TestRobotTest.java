@@ -16,51 +16,10 @@ public class TestRobotTest {
     @Test
     public void testTurnLeft() {
         Robot robot1 = new Robot();
-        robot1.setTurnleft();
+        robot1.turnLeft();
 
-        assertEquals(robot1.getTurnleft(),5);
+        assertEquals(robot1.getDirection(),Direction.LEFT);
     }
-
-    @Test
-    public void testTurnRight() {
-        Robot robot1 = new Robot();
-        robot1.setTurnright();
-
-        assertEquals(robot1.getTurnright(),5);
-    }
-//=========================DIRECTION======================================
-    @Test
-    public void Direction() {
-        Robot robot1 = new Robot();
-        robot1.setUP();
-
-        assertEquals(robot1.getY(),5);
-    }
-
-    @Test
-    public void Direction() {
-        Robot robot1 = new Robot();
-        robot1.setRIGHT();
-
-        assertEquals(robot1.getX(),5);
-    }
-
-    @Test
-    public void Direction() {
-        Robot robot1 = new Robot();
-        robot1.setDOWN();
-
-        assertEquals(robot1.getY(),5);
-    }
-
-    @Test
-    public void Direction() {
-        Robot robot1 = new Robot();
-        robot1.setLEFT();
-
-        assertEquals(robot1.getX(),5);
-    }
-//===========================================================================
 
     @Test
     public void testRobotX() {
