@@ -52,6 +52,22 @@ public class Robot {
         }
     }
 
+    public void turnRight() {
+        Direction currentDirection = getDirection();
+        if (currentDirection == Direction.UP) {
+            setRIGHT();
+        }
+        else if (currentDirection == Direction.LEFT) {
+            setUP();
+        }
+        else if (currentDirection == Direction.DOWN) {
+            setLEFT();
+        }
+        else if (currentDirection == Direction.RIGHT) {
+            setDOWN();
+        }
+    }
+
     public int getX() {
         return x;
     }
