@@ -1,11 +1,30 @@
 public class Robot {
+    int z;
     int x;
     int y;
     String color;
     Direction direction;
 
+    public Robot(int x,int  y){
+        this.x = x;
+        this.y = y;
+        System.out.println("first parametr"+ x + y);
+    }
+
+    public Robot (float x,float y){
+        this.x = float x;
+        this.y = float y;
+        System.out.println("Second parametr"+ x + y);
+    }
+
+
     public  Robot() {
         this.direction = Direction.UP;
+        this.y = 0;
+    }
+
+    public  Robot(Direction direction) {
+        this.direction = direction;
     }
 
     public void setColor(String color) {

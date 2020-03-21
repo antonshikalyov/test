@@ -44,4 +44,26 @@ public class TestRobotTest {
 
         assertEquals(robot1.getY(),10);
     }
+
+    @Test
+    public void testTurnRightStartingDown() {
+        Robot robot1 = new Robot(Direction.DOWN);
+        robot1.turnRight();
+
+        assertEquals(robot1.getDirection(),Direction.LEFT);
+    }
+
+    @Test
+    public void testRobotYWithoutSet() {
+        Robot robot1 = new Robot();
+
+        assertEquals(robot1.getY(),0);
+    }
+
+    @Test
+    public void testRobotYWithConstructor() {
+        Robot robot1 = new Robot(10,10);
+
+        assertEquals(robot1.getY(),10);
+    }
 }
