@@ -5,16 +5,16 @@ public class Robot {
     String color;
     Direction direction;
 
-    public Robot(int x,int  y){
+    public Robot(int x,int y){
         this.x = x;
         this.y = y;
-        System.out.println("first parametr"+ x + y);
+        System.out.println("parametr int"+ x + y);
     }
 
-    public Robot (float x,float y){
-        this.x = float x;
-        this.y = float y;
-        System.out.println("Second parametr"+ x + y);
+    public Robot(float x,float y){
+        this.x = Math.round(x);
+        this.y = Math.round(y);
+        System.out.println("parametr float "+ x + y);
     }
 
 

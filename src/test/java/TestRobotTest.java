@@ -66,4 +66,11 @@ public class TestRobotTest {
 
         assertEquals(robot1.getY(),10);
     }
+
+    @Test
+    public void testRobotYWithConstructorFloat() {
+        Robot robot1 = new Robot(10,10);
+
+        assertEquals(robot1.getX(),10.0);
+    }
 }
