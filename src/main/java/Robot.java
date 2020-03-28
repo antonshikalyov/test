@@ -3,7 +3,7 @@ public class Robot {
     int x;
     int y;
     String color;
-    Power power;
+    int power;
     Direction direction;
 
     public Robot(int x,int y){
@@ -37,12 +37,7 @@ public class Robot {
     }
 
     public void setPower() {
-        this.power = Power.FULL;
-x`
-    }
-
-    public void getPower() {
-        this.power = Power.LOW;
+        this.power = power;
     }
 
     public void setUP() {

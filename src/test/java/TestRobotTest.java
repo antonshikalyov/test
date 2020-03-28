@@ -9,7 +9,7 @@ public class TestRobotTest {
         Robot robot1 = new Robot();
         robot1.setColor("red");
 
-        assertEquals(robot1.getColor(),"red");
+        assertEquals(robot1.getColor(), "red");
     }
 
     @Test
@@ -17,7 +17,7 @@ public class TestRobotTest {
         Robot robot1 = new Robot();
         robot1.turnLeft();
 
-        assertEquals(robot1.getDirection(),Direction.LEFT);
+        assertEquals(robot1.getDirection(), Direction.LEFT);
     }
 
     @Test
@@ -25,7 +25,7 @@ public class TestRobotTest {
         Robot robot1 = new Robot();
         robot1.turnRight();
 
-        assertEquals(robot1.getDirection(),Direction.RIGHT);
+        assertEquals(robot1.getDirection(), Direction.RIGHT);
     }
 
     @Test
@@ -33,7 +33,7 @@ public class TestRobotTest {
         Robot robot1 = new Robot();
         robot1.setX(10);
 
-        assertEquals(robot1.getX(),10);
+        assertEquals(robot1.getX(), 10);
     }
 
     @Test
@@ -41,7 +41,7 @@ public class TestRobotTest {
         Robot robot1 = new Robot();
         robot1.setY(10);
 
-        assertEquals(robot1.getY(),10);
+        assertEquals(robot1.getY(), 10);
     }
 
     @Test
@@ -49,41 +49,35 @@ public class TestRobotTest {
         Robot robot1 = new Robot(Direction.DOWN);
         robot1.turnRight();
 
-        assertEquals(robot1.getDirection(),Direction.LEFT);
+        assertEquals(robot1.getDirection(), Direction.LEFT);
     }
 
     @Test
     public void testRobotYWithoutSet() {
         Robot robot1 = new Robot();
 
-        assertEquals(robot1.getY(),0);
+        assertEquals(robot1.getY(), 0);
     }
 
     @Test
     public void testRobotYWithConstructor() {
-        Robot robot1 = new Robot(10,10);
+        Robot robot1 = new Robot(10, 10);
 
-        assertEquals(robot1.getY(),10);
+        assertEquals(robot1.getY(), 10);
     }
 
     @Test
     public void testRobotYWithConstructorFloat() {
-        Robot robot1 = new Robot(10,10);
+        Robot robot1 = new Robot(10, 10);
 
-        assertEquals(robot1.getX(),10.0);
+        assertEquals(robot1.getX(), 10.0);
     }
 
     @Test
-    public void PowerLow() {
-        Robot robot1 = new Robot(Power.FULL);
+    public void PowerBot() {
+        Robot robot1 = new Robot();
+        robot1.setpower(10);
 
-        assertEquals();
-    }
-
-    @Test
-    public void PowerLow() {
-        Robot robot1 = new Robot(Power.LOW);
-
-        assertEquals();
+        assertEquals( 10);
     }
 }
