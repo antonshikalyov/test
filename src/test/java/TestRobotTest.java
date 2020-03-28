@@ -1,4 +1,3 @@
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -72,5 +71,19 @@ public class TestRobotTest {
         Robot robot1 = new Robot(10,10);
 
         assertEquals(robot1.getX(),10.0);
+    }
+
+    @Test
+    public void PowerLow() {
+        Robot robot1 = new Robot(Power.FULL);
+
+        assertEquals();
+    }
+
+    @Test
+    public void PowerLow() {
+        Robot robot1 = new Robot(Power.LOW);
+
+        assertEquals();
     }
 }
