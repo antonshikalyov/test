@@ -36,6 +36,13 @@ public class Robot {
         return color;
     }
 
+    //===========================================================================================
+
+    public void stepForward() {
+        int x=++1;
+        int y=++1;
+    }
+
     public void setPower() {
         this.power = power;
     }

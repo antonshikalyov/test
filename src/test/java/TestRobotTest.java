@@ -76,7 +76,7 @@ public class TestRobotTest {
     @Test
     public void PowerBot() {
         Robot robot1 = new Robot();
-        robot1.setpower(10);
+        robot1.setPower(10);
 
         assertEquals( 10);
     }
